@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nav-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-bottom {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  top: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
